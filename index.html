@@ -59,7 +59,13 @@
       </section>
 
       <section id="contact" class="contact">
-        <form action="/" class="form scroll-in">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="honey-pot-field"
+          class="form scroll-in"
+        >
           <div class="form-item">
             <label for="name">Name</label>
             <input name="name" id="name" type="text" required />
@@ -77,6 +83,12 @@
               rows="5"
               required
             ></textarea>
+          </div>
+          <div class="hidden-form-field">
+            <label for="honey-pot-field"
+              >Don’t fill this out if you’re human</label
+            >
+            <input name="honey-pot-field" />
           </div>
           <button>Send</button>
         </form>

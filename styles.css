@@ -137,6 +137,10 @@ textarea {
   background-color: #3730a3;
 }
 
+.form .hidden-form-field {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .form button {
     align-self: flex-start;
